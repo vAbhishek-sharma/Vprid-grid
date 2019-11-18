@@ -1,0 +1,137 @@
+//custom Variables
+$primary-color:aqua;
+$primary-color-light:lighten( $primary-color, 10% );
+$primary-color-dark:darken( $primary-color, 10% );
+
+$secondary-color:black;
+$secondary-color-light:tint($secondary-color, 10%);
+$secondary-color-dark:shade($secondary-color,10%);
+
+.is-primary-color{
+    color: $primary-color;
+}
+.is-secondary{
+    color:$secondary-color;
+}
+
+.is-white{
+    color: white;
+}
+
+//Background Color//
+.bg-primary-color{
+    background-color: $primary-color;
+}
+
+.bg-primary-light{
+    background-color: $primary-color-light;
+}
+
+.bg-primary-dark{
+    background-color: $primary-color-dark;
+}
+
+
+
+.bg-secondary-color{
+    background-color: $secondary-color;
+}
+
+.bg-secondary-dark{
+    background-color: $secondary-color-dark;
+}
+
+.bg-secondary-light{
+    background-color: $secondary-color-light;
+}
+
+
+.hero-mix{
+    
+    background-color: $primary-color-light;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    height: 100vh;
+}
+
+//Gradient//
+.hero-btotrans{
+    color: white;
+    background-image: linear-gradient(45deg, $secondary-color, transparent);
+    background-image: linear-gradient(135deg, $secondary-color transparent);
+
+}
+
+.hero-gradient{
+    background-image:linear-gradient(45deg,$primary-color,$secondary-color)
+}
+
+.gradient-rotation-black{
+   
+    animation-name: gradient-rotation;
+    
+    background:linear-gradient(287deg, $secondary-color, transparent),linear-gradient(0deg, $secondary-color, transparent), linear-gradient(45deg, $secondary-color, $primary-color);
+   
+
+}
+
+
+//Icon Size//
+.is-xlarge{
+    // size: 5em;
+    height: 5em;
+    width: 5em;
+}
+
+
+
+.has-padding{
+    padding:1em
+}
+
+.has-margin{
+    margin: auto;
+}
+
+.bg-cover{
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-height-medium{
+    min-height:10rem;
+}
+
+
+
+// @keyframes gradient-rotation{
+//     0% {background:linear-gradient(0grad, black, transparent),linear-gradient(45deg, black, aqua); }
+//     10% {background:linear-gradient(40grad, black, transparent),linear-gradient(45deg, black, aqua);}
+//     20% {background:linear-gradient(80grad, black, transparent),linear-gradient(45deg, black, aqua);}
+//     30% {background:linear-gradient(120grad, black, transparent),linear-gradient(45deg, black, aqua);}
+//     40% {background:linear-gradient(160grad, black, transparent),linear-gradient(45deg, black, aqua);}
+//     50% {background:linear-gradient(200grad, black, transparent),linear-gradient(45deg, black, aqua); }
+//     60% {background:linear-gradient(240grad, black, transparent),linear-gradient(45deg, black, aqua);}
+//     70% {background:linear-gradient(280grad, black, transparent),linear-gradient(45deg, black, aqua);}
+//     80% {background:linear-gradient(320grad, black, transparent),linear-gradient(45deg, black, aqua);}
+//     90% {background:linear-gradient(360grad, black, transparent),linear-gradient(45deg, black, aqua);}
+//     0% {background:linear-gradient(400grad, black, transparent),linear-gradient(45deg, black, aqua);}
+   
+// }
+
+
+
+  .border-bt-right{
+    @include from(desktop) {
+        border-right: 3px solid $primary-color;
+    }
+    @include until (tablet){
+    border-bottom: 3px solid $primary-color;
+    }
+}
+
+.has-padding-horizontal {
+    padding: 0 1rem;
+}

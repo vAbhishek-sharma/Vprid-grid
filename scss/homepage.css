@@ -1,0 +1,86 @@
+.is-primary-color {
+  color: aqua;
+}
+
+.is-secondary {
+  color: black;
+}
+
+.is-white {
+  color: white;
+}
+
+.is-xlarge {
+  height: 5em;
+  width: 5em;
+}
+
+.bg-primary-color {
+  background-color: aqua;
+}
+
+.bg-primary-light {
+  background-color: #33ffff;
+}
+
+.bg-primary-dark {
+  background-color: #00cccc;
+}
+
+.bg-secondary-color {
+  background-color: #1b1b1b;
+}
+
+.bg-secondary-dark {
+  background-color: shade(black, 10%);
+}
+
+.bg-secondary-light {
+  background-color: tint(black, 10%);
+}
+
+.hero-mix {
+  background-color: #00fffff2;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  height: 100vh;
+}
+
+.has-padding {
+  padding: 1em;
+}
+
+.has-margin {
+  margin: auto;
+}
+
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-height-medium {
+  min-height: 10rem;
+}
+
+.hero-btotrans {
+  color: white;
+  background-image: linear-gradient(45deg, black, transparent);
+  background-image: linear-gradient(135deg, black, transparent);
+}
+
+.hero-gradient {
+  background-image: linear-gradient(45deg, aqua, black);
+}
+
+.gradient-rotation-black {
+  -webkit-animation-name: gradient-rotation;
+          animation-name: gradient-rotation;
+  background: linear-gradient(287deg, black, transparent), linear-gradient(0deg, black, transparent), linear-gradient(45deg, black, aqua);
+}
+
+.border-red {
+  border-bottom: 3px solid;
+}
+/*# sourceMappingURL=homepage.css.map */
