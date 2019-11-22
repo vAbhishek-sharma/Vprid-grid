@@ -11934,13 +11934,13 @@ label.panel-block:hover {
   min-height: 10rem;
 }
 
-@media screen and (min-width: desktop) {
+@media screen and (min-width: 1024px) {
   .border-bt-right {
     border-right: 3px solid aqua;
   }
 }
 
-@media screen and (max-width: tablet-1px) {
+@media screen and (max-width: 1023px) {
   .border-bt-right {
     border-bottom: 3px solid aqua;
   }
@@ -11954,8 +11954,14 @@ label.panel-block:hover {
   border: 1px solid white;
 }
 
-.navbar-fix {
-  width: 100vw;
-  position: absolute;
+@media screen and (max-width: 1023px) {
+  .navbar-fix {
+    width: 100vw;
+    position: absolute;
+  }
+}
+
+.has-padding-vertical {
+  padding: 1em 0;
 }
 /*# sourceMappingURL=home.css.map */

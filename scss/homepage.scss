@@ -124,10 +124,10 @@ $secondary-color-dark:shade($secondary-color,10%);
 
 
   .border-bt-right{
-    @include from(desktop) {
+    @include desktop {
         border-right: 3px solid $primary-color;
     }
-    @include until (tablet){
+    @include touch{
     border-bottom: 3px solid $primary-color;
     }
 }
@@ -140,8 +140,14 @@ $secondary-color-dark:shade($secondary-color,10%);
     border: 1px solid white;
 }
 //Navbar fixed//
-.navbar-fix{
-    width: 100vw;
-    position: absolute;
+@include touch{
+    .navbar-fix{
+        width: 100vw;
+        position: absolute;
+    
+    }
+    }
 
-}
+    .has-padding-vertical  {
+        padding: 1em 0;
+    }
