@@ -135,3 +135,13 @@ $secondary-color-dark:shade($secondary-color,10%);
 .has-padding-horizontal {
     padding: 0 1rem;
 }
+
+.border-solid{
+    border: 1px solid white;
+}
+//Navbar fixed//
+.navbar-fix{
+    width: 100vw;
+    position: absolute;
+
+}

@@ -11949,4 +11949,13 @@ label.panel-block:hover {
 .has-padding-horizontal {
   padding: 0 1rem;
 }
+
+.border-solid {
+  border: 1px solid white;
+}
+
+.navbar-fix {
+  width: 100vw;
+  position: absolute;
+}
 /*# sourceMappingURL=home.css.map */
