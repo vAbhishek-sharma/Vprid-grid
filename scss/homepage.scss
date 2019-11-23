@@ -79,9 +79,14 @@ $secondary-color-dark:shade($secondary-color,10%);
 
 //Icon Size//
 .is-xlarge{
-    // size: 5em;
-    height: 5em;
-    width: 5em;
+    // // size: 5em;
+    // height: 5em;
+    // width: 5em;
+    max-height: 5rem;
+    max-width: 5rem;
+    height: auto;
+    width: -webkit-fill-available;
+
 }
 
 
@@ -148,6 +153,7 @@ $secondary-color-dark:shade($secondary-color,10%);
     }
     }
 
-    .has-padding-vertical  {
-        padding: 1em 0;
+    .has-padding-vertical {
+        padding: 0 1rem;
+        margin: 1em;
     }
